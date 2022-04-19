@@ -26,7 +26,7 @@
 					<td th:text="${persona.telefono}"></td>
 					<td>
 					<a th:href="@{/editar/}+${persona.id}" class="btn btn-warning">EDITAR</a>
-					<a class="btn btn-danger">ELIMINAR</a>
+					<a th:onclick="eliminar([[${persona.id}]])" class="btn btn-danger">ELIMINAR</a>
 					</td>
 
 				</tr>
@@ -38,5 +38,8 @@
 
 
 	</div>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/funciones.js"></script>
 </body>
 </html>
