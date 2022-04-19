@@ -33,8 +33,8 @@ private IPersona data;
 
 	@Override
 	public Optional<Persona> listarID(int id) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return data.findById(id);
 	}
 
 	@Override
